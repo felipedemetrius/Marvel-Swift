@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CommonCrypto/CommonCrypto.h>
 
 //! Project version number for SDKMarvel.
 FOUNDATION_EXPORT double SDKMarvelVersionNumber;
@@ -15,5 +16,3 @@ FOUNDATION_EXPORT double SDKMarvelVersionNumber;
 FOUNDATION_EXPORT const unsigned char SDKMarvelVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SDKMarvel/PublicHeader.h>
-
-
