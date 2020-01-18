@@ -7,15 +7,16 @@
 //
 
 import UIKit
+import SDKMarvel
 
-final class AppCoordinator: RootViewCoordinator {
+class AppCoordinator: RootViewCoordinator {
     let window: UIWindow
     var childCoordinators: [Coordinator] = []
     var rootViewController: UIViewController {
         return self.navigationController
     }
     lazy var navigationController: UINavigationController = {
-        let navigationController = UINavigationController()
+        let navigationController = NavigationController()
         return navigationController
     }()
     init(window: UIWindow) {
@@ -24,7 +25,14 @@ final class AppCoordinator: RootViewCoordinator {
         self.window.makeKeyAndVisible()
     }
     func start() {
-        let viewController = ViewController()
+        let viewModel = CharactersViewModel(navigationDelegate: self)
+        let viewController = CharactersViewController(viewModel: viewModel)
         self.navigationController.viewControllers = [viewController]
+    }
+}
+
+extension AppCoordinator: CharactersNavigationProtocol {
+    func goToCharacterDetail(character: Character) {
+        print(character)
     }
 }
