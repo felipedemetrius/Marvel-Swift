@@ -33,6 +33,8 @@ class AppCoordinator: RootViewCoordinator {
 
 extension AppCoordinator: CharactersNavigationProtocol {
     func goToCharacterDetail(character: Character) {
-        print(character)
+        let viewModel = CharacterDetailViewModel(character: character)
+        let viewController = CharacterDetailViewController(viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

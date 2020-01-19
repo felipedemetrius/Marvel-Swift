@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B340FA0F23D49C43004CAE4C /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA0E23D49C43004CAE4C /* CharacterDetailViewController.swift */; };
+		B340FA1123D49C6D004CAE4C /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA1023D49C6D004CAE4C /* CharacterDetailViewModel.swift */; };
+		B340FA1323D49CFD004CAE4C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA1223D49CFD004CAE4C /* DetailView.swift */; };
+		B340FA1523D4A06F004CAE4C /* ComicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA1423D4A06F004CAE4C /* ComicCollectionViewCell.swift */; };
+		B340FA1723D4ABA2004CAE4C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B340FA1623D4ABA2004CAE4C /* SnapKit.framework */; };
+		B340FA1823D4ABA2004CAE4C /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B340FA1623D4ABA2004CAE4C /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3A85F4F23D389A300E375A6 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A85F4E23D389A300E375A6 /* CharactersViewController.swift */; };
 		B3A85F5223D389BE00E375A6 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A85F5123D389BE00E375A6 /* CharactersViewModel.swift */; };
 		B3A85F5423D389FB00E375A6 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A85F5323D389FB00E375A6 /* Observable.swift */; };
@@ -50,7 +56,7 @@
 		B3FEFD1823D38677002433F9 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFD1723D38677002433F9 /* ListView.swift */; };
 		B3FEFD1A23D386C7002433F9 /* NSLayoutConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFD1923D386C7002433F9 /* NSLayoutConstraintExtension.swift */; };
 		B3FEFD1C23D3874B002433F9 /* CharCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFD1B23D3874B002433F9 /* CharCell.swift */; };
-		B3FEFD1E23D38859002433F9 /* CharCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFD1D23D38859002433F9 /* CharCellViewModel.swift */; };
+		B3FEFD1E23D38859002433F9 /* ObjectCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFD1D23D38859002433F9 /* ObjectCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +105,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B3FEFCCE23D29271002433F9 /* SDKMarvel.framework in Embed Frameworks */,
+				B340FA1823D4ABA2004CAE4C /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +124,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B340FA0E23D49C43004CAE4C /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		B340FA1023D49C6D004CAE4C /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		B340FA1223D49CFD004CAE4C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B340FA1423D4A06F004CAE4C /* ComicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCollectionViewCell.swift; sourceTree = "<group>"; };
+		B340FA1623D4ABA2004CAE4C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		B3A85F4E23D389A300E375A6 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		B3A85F5123D389BE00E375A6 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		B3A85F5323D389FB00E375A6 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
@@ -166,7 +178,7 @@
 		B3FEFD1723D38677002433F9 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		B3FEFD1923D386C7002433F9 /* NSLayoutConstraintExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintExtension.swift; sourceTree = "<group>"; };
 		B3FEFD1B23D3874B002433F9 /* CharCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCell.swift; sourceTree = "<group>"; };
-		B3FEFD1D23D38859002433F9 /* CharCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCellViewModel.swift; sourceTree = "<group>"; };
+		B3FEFD1D23D38859002433F9 /* ObjectCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3FEFCCD23D29271002433F9 /* SDKMarvel.framework in Frameworks */,
+				B340FA1723D4ABA2004CAE4C /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +224,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B340FA0D23D49C1B004CAE4C /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B340FA0E23D49C43004CAE4C /* CharacterDetailViewController.swift */,
+				B340FA1023D49C6D004CAE4C /* CharacterDetailViewModel.swift */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
 		B3A85F5023D389A800E375A6 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +335,7 @@
 		B3FEFCD623D2956D002433F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B340FA1623D4ABA2004CAE4C /* SnapKit.framework */,
 				B3FEFCD723D2956E002433F9 /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -417,6 +440,7 @@
 			isa = PBXGroup;
 			children = (
 				B3A85F5023D389A800E375A6 /* Characters */,
+				B340FA0D23D49C1B004CAE4C /* CharacterDetail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -445,7 +469,8 @@
 			isa = PBXGroup;
 			children = (
 				B3FEFD1B23D3874B002433F9 /* CharCell.swift */,
-				B3FEFD1D23D38859002433F9 /* CharCellViewModel.swift */,
+				B340FA1423D4A06F004CAE4C /* ComicCollectionViewCell.swift */,
+				B3FEFD1D23D38859002433F9 /* ObjectCellViewModel.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -462,6 +487,7 @@
 			isa = PBXGroup;
 			children = (
 				B3FEFD1723D38677002433F9 /* ListView.swift */,
+				B340FA1223D49CFD004CAE4C /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -497,6 +523,7 @@
 				B3FEFC7D23D291AC002433F9 /* Frameworks */,
 				B3FEFC7E23D291AC002433F9 /* Resources */,
 				B3FEFCD223D29271002433F9 /* Embed Frameworks */,
+				B340FA1923D4ABB4004CAE4C /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -677,6 +704,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B340FA1923D4ABB4004CAE4C /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		B3FEFCDB23D2959A002433F9 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -707,13 +753,17 @@
 				B3A85F5223D389BE00E375A6 /* CharactersViewModel.swift in Sources */,
 				B3FEFD1623D38634002433F9 /* UIViewExtension.swift in Sources */,
 				B3FEFD0A23D3421B002433F9 /* AppCoordinator.swift in Sources */,
-				B3FEFD1E23D38859002433F9 /* CharCellViewModel.swift in Sources */,
+				B3FEFD1E23D38859002433F9 /* ObjectCellViewModel.swift in Sources */,
+				B340FA1523D4A06F004CAE4C /* ComicCollectionViewCell.swift in Sources */,
 				B3FEFD1823D38677002433F9 /* ListView.swift in Sources */,
 				B3FEFD1323D34DA3002433F9 /* NavigationController.swift in Sources */,
+				B340FA1123D49C6D004CAE4C /* CharacterDetailViewModel.swift in Sources */,
 				B3FEFC8423D291AC002433F9 /* AppDelegate.swift in Sources */,
+				B340FA0F23D49C43004CAE4C /* CharacterDetailViewController.swift in Sources */,
 				B3FEFD0823D341DB002433F9 /* CoordinatorProtocol.swift in Sources */,
 				B3FEFD1A23D386C7002433F9 /* NSLayoutConstraintExtension.swift in Sources */,
 				B3FEFD1C23D3874B002433F9 /* CharCell.swift in Sources */,
+				B340FA1323D49CFD004CAE4C /* DetailView.swift in Sources */,
 				B3A85F4F23D389A300E375A6 /* CharactersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -932,12 +982,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Marvel-Swift/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.felipe.Marvel-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.felipe.Marvel-Swiftt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -950,12 +1005,17 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Marvel-Swift/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.felipe.Marvel-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.felipe.Marvel-Swiftt";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

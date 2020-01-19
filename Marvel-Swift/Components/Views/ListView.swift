@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 final class ListView: UIView {
     lazy var tableView: UITableView = {
@@ -67,21 +68,21 @@ final class ListView: UIView {
     }
 
     private func installConstraints() {
-        tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor).activate()
-        tableView.topAnchor.constraint(equalTo: self.topAnchor).activate()
-        tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor).activate()
-        tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor).activate()
-
-        labelMessage.centerXAnchor.constraint(equalTo: self.centerXAnchor).activate()
-        labelMessage.centerYAnchor.constraint(equalTo: self.centerYAnchor).activate()
-        labelMessage.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 16).activate()
-        labelMessage.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16).activate()
-
-        activityIndicator.centerXAnchor.constraint(equalTo: self.centerXAnchor).activate()
-        activityIndicator.centerYAnchor.constraint(equalTo: self.centerYAnchor).activate()
-        
-        activityIndicatorNext.centerXAnchor.constraint(equalTo: self.centerXAnchor).activate()
-        activityIndicatorNext.bottomAnchor.constraint(equalTo: self.bottomAnchor).activate()
+        tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        labelMessage.snp.makeConstraints {
+            $0.center.equalTo(self)
+            $0.right.greaterThanOrEqualTo(self).inset(16)
+            $0.left.greaterThanOrEqualTo(self).inset(16)
+        }
+        activityIndicator.snp.makeConstraints {
+            $0.center.equalTo(self)
+        }
+        activityIndicatorNext.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalToSuperview()
+        }
     }
 
     @objc private func addPullToRefresh() {

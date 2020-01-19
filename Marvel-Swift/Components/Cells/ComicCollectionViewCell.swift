@@ -1,28 +1,31 @@
 //
-//  CharCell.swift
+//  ComicCollectionViewCell.swift
 //  Marvel-Swift
 //
-//  Created by Felipe Silva  on 18/01/20.
+//  Created by Felipe Silva  on 19/01/20.
 //  Copyright © 2020 Felipe Silva . All rights reserved.
 //
-import SnapKit
-import UIKit
 
-final class CharCell: UITableViewCell {
-    var imageChar: UIImageView = {
+import UIKit
+import SnapKit
+
+final class ComicCollectionViewCell: UICollectionViewCell {
+    var image: UIImageView = {
         let image = UIImageView(frame: CGRect(origin: .zero,
-                                              size: CGSize(width: 70,
-                                                           height: 70)))
-        image.layer.cornerRadius = image.frame.width / 2
+                                              size: CGSize(width: 120,
+                                                           height: 120)))
+        image.layer.cornerRadius = 10
         image.layer.masksToBounds = true
         image.layer.borderWidth = 0.5
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
 
-    lazy var label: UILabel = {
+    var label: UILabel = {
         let lbl = UILabel()
-        lbl.numberOfLines = 0
+        lbl.numberOfLines = 4
+        lbl.font = UIFont.boldSystemFont(ofSize: 14)
+        lbl.textAlignment = .center
         lbl.translatesAutoresizingMaskIntoConstraints = false
         return lbl
     }()
@@ -39,27 +42,19 @@ final class CharCell: UITableViewCell {
 
     lazy var stackView: UIStackView = {
         let stackView = UIStackView()
-        stackView.addArrangedSubview(imageChar)
+        stackView.addArrangedSubview(image)
         stackView.addArrangedSubview(label)
+        stackView.axis = .vertical
         stackView.alignment = .center
         stackView.distribution = .fillProportionally
-        stackView.axis = .horizontal
-        stackView.spacing = 10
+        stackView.isBaselineRelativeArrangement = true
+        stackView.spacing = 4
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
 
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-    }
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        setupCell()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    override init(frame: CGRect) {
+        super.init(frame: frame)
     }
 
     var viewModel: ObjectCellProtocol? {
@@ -68,7 +63,7 @@ final class CharCell: UITableViewCell {
             setupBindings()
         }
     }
-    
+
     private func setupBindings() {
         guard let viewModel = self.viewModel else {return}
 
@@ -79,13 +74,20 @@ final class CharCell: UITableViewCell {
 
         viewModel.image.bind { [weak self] image in
             guard let self = self else { return }
-            self.imageChar.image = image
+            self.image.image = image
         }
     }
 
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setupCell()
+    }
+
     private func setupCell() {
-        self.selectionStyle = .none
-        self.accessoryType = .disclosureIndicator
         addComponents()
         installConstraints()
     }
@@ -97,20 +99,13 @@ final class CharCell: UITableViewCell {
 
     private func installConstraints() {
         stackView.snp.makeConstraints {
-            $0.edges.equalTo(contentView.layoutMarginsGuide)
+            $0.edges.equalTo(self)
+        }
+        image.snp.makeConstraints {
+            $0.height.equalTo(120)
         }
         activityIndicator.snp.makeConstraints {
-            $0.center.equalTo(imageChar)
+            $0.center.equalTo(image)
         }
-        imageChar.snp.makeConstraints {
-            $0.height.equalTo(70)
-            $0.width.equalTo(70)
-        }
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 }
