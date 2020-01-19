@@ -23,14 +23,14 @@ final class NavigationController: UINavigationController {
         navigationBar.barTintColor = .white
         navigationBar.tintColor = .black
         navigationBar.backgroundColor = .white
-                
+
         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black,
             NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title2)]
 
         if #available(iOS 11.0, *) {
             navigationBar.prefersLargeTitles = true
         }
-        
+
         if #available(iOS 13.0, *) {
             let navBarAppearance = UINavigationBarAppearance()
             navBarAppearance.configureWithOpaqueBackground()

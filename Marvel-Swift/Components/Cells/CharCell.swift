@@ -68,7 +68,7 @@ final class CharCell: UITableViewCell {
             setupBindings()
         }
     }
-    
+
     private func setupBindings() {
         guard let viewModel = self.viewModel else {return}
 

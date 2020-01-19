@@ -1,0 +1,24 @@
+module: SDKMarvel
+author: Felipe Silva
+github_url: https://gitlab.com/felipedemetrius
+module_version: 0.0.1
+output: docs/sdk
+
+exclude:
+  - "SDKMarvel/API/*"
+  - "SDKMarvel/Extension/*"
+  - "SDKMarvel/Services/*"
+  - "SDKMarvel/MainProtocols/*"
+
+custom_categories:
+  - name: ServiceManagers
+    children:
+    - CharacterServiceManager
+    - MediaServiceManager 
+    - ImageServiceManager
+
+  - name: Models
+    children:
+    - Character
+    - Media
+

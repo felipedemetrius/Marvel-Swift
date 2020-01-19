@@ -72,7 +72,7 @@ final class CharacterDetailViewController: UIViewController {
             guard let self = self else { return }
             self.baseView.collectionView.reloadData()
         }
-        
+
         viewModel.image.bind {  [weak self]  image in
             guard let self = self else { return }
             self.baseView.imageChar.image = image

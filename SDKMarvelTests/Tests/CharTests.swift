@@ -30,6 +30,7 @@ class CharTests: QuickSpec {
                                 expect(value).to(beAKindOf([Character].self))
                                 expect(value.first).to(beAKindOf(Character.self))
                                 expect(value).notTo(beNil())
+
                             case .failure:
                                 fail()
                             }

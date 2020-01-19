@@ -18,7 +18,7 @@ class CharDetailModelTests: QuickSpec {
         describe("Given that I opened the list of media") {
             context("When the list is loaded") {
                 viewModel.setDatasource()
-                
+
                 it("Then the first title's name is") {
                     expect(viewModel.dataSource.value.first?.title).to(contain("fake"))
                 }
@@ -27,7 +27,7 @@ class CharDetailModelTests: QuickSpec {
         describe("Given that I opened the list of media") {
             context("When I make a pagination") {
                 viewModel.nextPage()
-                
+
                 it("Then the next title's name is") {
                     expect(viewModel.dataSource.value.last?.title).to(contain("fake 2"))
                 }
@@ -44,9 +44,9 @@ final class CharDetailFakeViewModel: CharacterDetailViewProtocol {
     var dataSource: Observable<[Media]>
     var character: Character
     var image: Observable<UIImage?>
-    
+
     var didNext = false
-    
+
     init() {
         self.error = Observable(nil)
         self.isLoading = Observable(false)
@@ -56,20 +56,20 @@ final class CharDetailFakeViewModel: CharacterDetailViewProtocol {
         self.image = Observable(nil)
         self.character = Character()
     }
-    
+
     func setDatasource() {
         var media = Media()
         media.title = "fake"
         dataSource.value = [media]
     }
-    
+
     func nextPage() {
         var media = Media()
         media.title = "fake 2"
         dataSource.value.append(media)
     }
-    
+
     func handler(result: Result<[Media], NetworkingError>) {
-        
+
     }
 }

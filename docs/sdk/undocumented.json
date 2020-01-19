@@ -1,0 +1,355 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Extensions/JSONDecoderExtension.swift",
+      "line": 46,
+      "symbol": "JSONDecoder.decode(_:from:keyPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 12,
+      "symbol": "Character",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 13,
+      "symbol": "Character.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 14,
+      "symbol": "Character.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 15,
+      "symbol": "Character.resourceURI",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 16,
+      "symbol": "Character.urls",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 17,
+      "symbol": "Character.thumbnail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 18,
+      "symbol": "Character.events",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 20,
+      "symbol": "Character.urlImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 32,
+      "symbol": "Character.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 36,
+      "symbol": "MediaShort",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 37,
+      "symbol": "MediaShort.available",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 38,
+      "symbol": "MediaShort.collectionURI",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 39,
+      "symbol": "MediaShort.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 43,
+      "symbol": "MediaItem",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 44,
+      "symbol": "MediaItem.resourceURI",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 48,
+      "symbol": "Thumbnail",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 49,
+      "symbol": "Thumbnail.path",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 58,
+      "symbol": "URLElement",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Character.swift",
+      "line": 59,
+      "symbol": "URLElement.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Media.swift",
+      "line": 12,
+      "symbol": "Media",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Media.swift",
+      "line": 13,
+      "symbol": "Media.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Media.swift",
+      "line": 14,
+      "symbol": "Media.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Media.swift",
+      "line": 15,
+      "symbol": "Media.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Media.swift",
+      "line": 16,
+      "symbol": "Media.resourceURI",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Media.swift",
+      "line": 17,
+      "symbol": "Media.thumbnail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Media.swift",
+      "line": 18,
+      "symbol": "Media.creators",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Media.swift",
+      "line": 19,
+      "symbol": "Media.characters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Media.swift",
+      "line": 20,
+      "symbol": "Media.urls",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Media.swift",
+      "line": 22,
+      "symbol": "Media.urlImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Models/Media.swift",
+      "line": 28,
+      "symbol": "Media.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 11,
+      "symbol": "NetworkingError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 12,
+      "symbol": "NetworkingError.emptyData",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 13,
+      "symbol": "NetworkingError.responseNil",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 14,
+      "symbol": "NetworkingError.authentication",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 15,
+      "symbol": "NetworkingError.badRequest",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 16,
+      "symbol": "NetworkingError.outdated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 17,
+      "symbol": "NetworkingError.failed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 18,
+      "symbol": "NetworkingError.decodingError(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 19,
+      "symbol": "NetworkingError.requestError(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 20,
+      "symbol": "NetworkingError.invalidURL(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 21,
+      "symbol": "NetworkingError.apiError(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/NetworkingError.swift",
+      "line": 23,
+      "symbol": "NetworkingError.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/Protocols/Pageable.swift",
+      "line": 20,
+      "symbol": "Pageable.getNext(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/ServiceManagers/CharacterServiceManager/CharacterServiceManager.swift",
+      "line": 42,
+      "symbol": "CharacterServiceManager.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/ServiceManagers/CharacterServiceManager/CharacterServiceProtocol.swift",
+      "line": 11,
+      "symbol": "CharacterServiceProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/ServiceManagers/ImageServiceManager/ImageServiceManager.swift",
+      "line": 12,
+      "symbol": "ImageServiceManager",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/ServiceManagers/ImageServiceManager/ImageServiceManager.swift",
+      "line": 15,
+      "symbol": "ImageServiceManager.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/ServiceManagers/ImageServiceManager/ImageServiceProtocol.swift",
+      "line": 12,
+      "symbol": "ImageServiceProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/fsilva/Documents/Projetos/marvel-swift/SDKMarvel/ServiceManagers/MediaServiceManager/MediaServiceProtocol.swift",
+      "line": 11,
+      "symbol": "MediaServiceProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/fsilva/Documents/Projetos/marvel-swift"
+}

@@ -18,7 +18,7 @@ class CharsViewModelTests: QuickSpec {
         describe("Given that I opened the list of characters") {
             context("When the list is loaded") {
                 viewModel.setDatasource()
-                
+
                 it("Then the first character's name is") {
                     expect(viewModel.dataSource.value.first?.name).to(contain("fake"))
                 }
@@ -27,7 +27,7 @@ class CharsViewModelTests: QuickSpec {
         describe("Given that I opened the list of characters") {
             context("When I make a pagination") {
                 viewModel.nextPage()
-                
+
                 it("Then the next character's name is") {
                     expect(viewModel.dataSource.value.last?.name).to(contain("fake 2"))
                 }
@@ -36,7 +36,7 @@ class CharsViewModelTests: QuickSpec {
         describe("Given that I opened the list of characters") {
             context("When I tap a character") {
                 viewModel.didSelectRowAt(row: 0)
-                
+
                 it("Then the next character's name is") {
                     expect(viewModel.didTap).to(beTrue())
                 }
@@ -52,9 +52,9 @@ final class CharsFakeViewModel: CharactersViewProtocol {
     var isLoading: Observable<Bool>
     var isLoadingNext: Observable<Bool>
     var dataSource: Observable<[Character]>
-    
+
     var didTap = false
-    
+
     init() {
         self.error = Observable(nil)
         self.isLoading = Observable(false)
@@ -62,23 +62,23 @@ final class CharsFakeViewModel: CharactersViewProtocol {
         self.dataSource = Observable([])
         self.service = CharacterServiceManager()
     }
-    
+
     func setDatasource() {
         var char = Character()
         char.name = "fake"
         dataSource.value = [char]
     }
-    
+
     func nextPage() {
         var char = Character()
         char.name = "fake 2"
         dataSource.value.append(char)
     }
-    
+
     func handler(result: Result<[Character], NetworkingError>) {
-        
+
     }
-    
+
     func didSelectRowAt(row: Int) {
         didTap = true
     }

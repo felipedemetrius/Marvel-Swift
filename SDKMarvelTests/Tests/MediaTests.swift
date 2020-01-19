@@ -30,6 +30,7 @@ class MediaTests: QuickSpec {
                                 expect(value).to(beAKindOf([Media].self))
                                 expect(value.first).to(beAKindOf(Media.self))
                                 expect(value).notTo(beNil())
+
                             case .failure:
                                 fail()
                             }
