@@ -368,13 +368,6 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		B340FA5C23D4F004004CAE4C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		B3A85F5023D389A800E375A6 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,7 +432,6 @@
 		B3FEFC9923D291AF002433F9 /* Marvel-SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				B340FA5C23D4F004004CAE4C /* Views */,
 				B340FA5B23D4EFFA004CAE4C /* ViewModels */,
 				B3FEFC9C23D291AF002433F9 /* Info.plist */,
 			);
