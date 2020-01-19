@@ -24,4 +24,8 @@ public struct Media: Codable {
         guard let extensionPath = thumbnail?.thumbnailExtension else {return nil}
         return thumb + "." + extensionPath
     }
+    
+    public init() {
+        
+    }
 }

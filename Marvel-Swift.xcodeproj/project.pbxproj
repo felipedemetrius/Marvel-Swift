@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B315D9F423D4FCA8000DC392 /* CharDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B315D9F323D4FCA8000DC392 /* CharDetailViewModelTests.swift */; };
 		B340FA0F23D49C43004CAE4C /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA0E23D49C43004CAE4C /* CharacterDetailViewController.swift */; };
 		B340FA1123D49C6D004CAE4C /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA1023D49C6D004CAE4C /* CharacterDetailViewModel.swift */; };
 		B340FA1323D49CFD004CAE4C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA1223D49CFD004CAE4C /* DetailView.swift */; };
@@ -33,6 +34,11 @@
 		B340FA5623D4D838004CAE4C /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA5523D4D838004CAE4C /* ImageTests.swift */; };
 		B340FA5823D4DEEE004CAE4C /* CharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA5723D4DEEE004CAE4C /* CharTests.swift */; };
 		B340FA5A23D4E201004CAE4C /* MediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA5923D4E201004CAE4C /* MediaTests.swift */; };
+		B340FA5E23D4F052004CAE4C /* Nimble.framework in Carthage */ = {isa = PBXBuildFile; fileRef = B340FA2D23D4D33A004CAE4C /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B340FA6023D4F052004CAE4C /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = B340FA2F23D4D33B004CAE4C /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B340FA6223D4F14A004CAE4C /* CharsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA6123D4F14A004CAE4C /* CharsViewModelTests.swift */; };
+		B340FA6323D4F19F004CAE4C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B340FA2F23D4D33B004CAE4C /* Quick.framework */; };
+		B340FA6423D4F19F004CAE4C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B340FA2D23D4D33A004CAE4C /* Nimble.framework */; };
 		B3A85F4F23D389A300E375A6 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A85F4E23D389A300E375A6 /* CharactersViewController.swift */; };
 		B3A85F5223D389BE00E375A6 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A85F5123D389BE00E375A6 /* CharactersViewModel.swift */; };
 		B3A85F5423D389FB00E375A6 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A85F5323D389FB00E375A6 /* Observable.swift */; };
@@ -43,7 +49,6 @@
 		B3FEFC8423D291AC002433F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFC8323D291AC002433F9 /* AppDelegate.swift */; };
 		B3FEFC8D23D291AF002433F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FEFC8C23D291AF002433F9 /* Assets.xcassets */; };
 		B3FEFC9023D291AF002433F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FEFC8E23D291AF002433F9 /* LaunchScreen.storyboard */; };
-		B3FEFC9B23D291AF002433F9 /* Marvel_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFC9A23D291AF002433F9 /* Marvel_SwiftTests.swift */; };
 		B3FEFCA623D291AF002433F9 /* Marvel_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFCA523D291AF002433F9 /* Marvel_SwiftUITests.swift */; };
 		B3FEFCC123D29271002433F9 /* SDKMarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3FEFCB823D29270002433F9 /* SDKMarvel.framework */; };
 		B3FEFCCA23D29271002433F9 /* SDKMarvel.h in Headers */ = {isa = PBXBuildFile; fileRef = B3FEFCBA23D29270002433F9 /* SDKMarvel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -130,6 +135,18 @@
 			name = Carthage;
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B340FA5D23D4F042004CAE4C /* Carthage */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B340FA5E23D4F052004CAE4C /* Nimble.framework in Carthage */,
+				B340FA6023D4F052004CAE4C /* Quick.framework in Carthage */,
+			);
+			name = Carthage;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B3FEFCD223D29271002433F9 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,6 +173,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B315D9F323D4FCA8000DC392 /* CharDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharDetailViewModelTests.swift; sourceTree = "<group>"; };
 		B340FA0E23D49C43004CAE4C /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		B340FA1023D49C6D004CAE4C /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
 		B340FA1223D49CFD004CAE4C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -181,6 +199,7 @@
 		B340FA5523D4D838004CAE4C /* ImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
 		B340FA5723D4DEEE004CAE4C /* CharTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharTests.swift; sourceTree = "<group>"; };
 		B340FA5923D4E201004CAE4C /* MediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTests.swift; sourceTree = "<group>"; };
+		B340FA6123D4F14A004CAE4C /* CharsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharsViewModelTests.swift; sourceTree = "<group>"; };
 		B3A85F4E23D389A300E375A6 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		B3A85F5123D389BE00E375A6 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		B3A85F5323D389FB00E375A6 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
@@ -194,7 +213,6 @@
 		B3FEFC8F23D291AF002433F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3FEFC9123D291AF002433F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3FEFC9623D291AF002433F9 /* Marvel-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marvel-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3FEFC9A23D291AF002433F9 /* Marvel_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwiftTests.swift; sourceTree = "<group>"; };
 		B3FEFC9C23D291AF002433F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3FEFCA123D291AF002433F9 /* Marvel-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marvel-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FEFCA523D291AF002433F9 /* Marvel_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel_SwiftUITests.swift; sourceTree = "<group>"; };
@@ -246,6 +264,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B340FA6323D4F19F004CAE4C /* Quick.framework in Frameworks */,
+				B340FA6423D4F19F004CAE4C /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +359,22 @@
 			path = ImageDownloader;
 			sourceTree = "<group>";
 		};
+		B340FA5B23D4EFFA004CAE4C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B340FA6123D4F14A004CAE4C /* CharsViewModelTests.swift */,
+				B315D9F323D4FCA8000DC392 /* CharDetailViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B340FA5C23D4F004004CAE4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B3A85F5023D389A800E375A6 /* Characters */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,7 +439,8 @@
 		B3FEFC9923D291AF002433F9 /* Marvel-SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				B3FEFC9A23D291AF002433F9 /* Marvel_SwiftTests.swift */,
+				B340FA5C23D4F004004CAE4C /* Views */,
+				B340FA5B23D4EFFA004CAE4C /* ViewModels */,
 				B3FEFC9C23D291AF002433F9 /* Info.plist */,
 			);
 			path = "Marvel-SwiftTests";
@@ -655,6 +692,7 @@
 				B3FEFC9223D291AF002433F9 /* Sources */,
 				B3FEFC9323D291AF002433F9 /* Frameworks */,
 				B3FEFC9423D291AF002433F9 /* Resources */,
+				B340FA5D23D4F042004CAE4C /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -893,7 +931,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3FEFC9B23D291AF002433F9 /* Marvel_SwiftTests.swift in Sources */,
+				B340FA6223D4F14A004CAE4C /* CharsViewModelTests.swift in Sources */,
+				B315D9F423D4FCA8000DC392 /* CharDetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1154,6 +1193,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Marvel-SwiftTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1175,6 +1218,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Marvel-SwiftTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
