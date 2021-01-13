@@ -82,7 +82,6 @@
 		B3FEFD1323D34DA3002433F9 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFD1223D34DA3002433F9 /* NavigationController.swift */; };
 		B3FEFD1623D38634002433F9 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFD1523D38634002433F9 /* UIViewExtension.swift */; };
 		B3FEFD1823D38677002433F9 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFD1723D38677002433F9 /* ListView.swift */; };
-		B3FEFD1A23D386C7002433F9 /* NSLayoutConstraintExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFD1923D386C7002433F9 /* NSLayoutConstraintExtension.swift */; };
 		B3FEFD1C23D3874B002433F9 /* CharCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFD1B23D3874B002433F9 /* CharCell.swift */; };
 		B3FEFD1E23D38859002433F9 /* ObjectCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FEFD1D23D38859002433F9 /* ObjectCellViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -254,7 +253,6 @@
 		B3FEFD1223D34DA3002433F9 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		B3FEFD1523D38634002433F9 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		B3FEFD1723D38677002433F9 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		B3FEFD1923D386C7002433F9 /* NSLayoutConstraintExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintExtension.swift; sourceTree = "<group>"; };
 		B3FEFD1B23D3874B002433F9 /* CharCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCell.swift; sourceTree = "<group>"; };
 		B3FEFD1D23D38859002433F9 /* ObjectCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -659,7 +657,6 @@
 			isa = PBXGroup;
 			children = (
 				B3FEFD1523D38634002433F9 /* UIViewExtension.swift */,
-				B3FEFD1923D386C7002433F9 /* NSLayoutConstraintExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -933,7 +930,6 @@
 				B3FEFC8423D291AC002433F9 /* AppDelegate.swift in Sources */,
 				B340FA0F23D49C43004CAE4C /* CharacterDetailViewController.swift in Sources */,
 				B3FEFD0823D341DB002433F9 /* CoordinatorProtocol.swift in Sources */,
-				B3FEFD1A23D386C7002433F9 /* NSLayoutConstraintExtension.swift in Sources */,
 				B3FEFD1C23D3874B002433F9 /* CharCell.swift in Sources */,
 				B340FA1323D49CFD004CAE4C /* DetailView.swift in Sources */,
 				B3A85F4F23D389A300E375A6 /* CharactersViewController.swift in Sources */,
