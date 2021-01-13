@@ -9,7 +9,7 @@
 import UIKit
 
 final class CharactersViewController: UIViewController {
-    var viewModel: CharactersViewProtocol
+    private let viewModel: CharactersViewProtocol
 
     init(viewModel: CharactersViewProtocol) {
         self.viewModel = viewModel

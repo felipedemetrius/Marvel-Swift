@@ -1,5 +1,5 @@
 //
-//  ImageTests.swift
+//  ImageServiceManagerTests.swift
 //  SDKMarvelTests
 //
 //  Created by Felipe Silva  on 19/01/20.
@@ -11,9 +11,9 @@ import Quick
 import OHHTTPStubs
 @testable import SDKMarvel
 
-class ImageTests: QuickSpec {
+class ImageServiceManagerTests: QuickSpec {
     override func spec() {
-        let service: ImageServiceProtocol = ImageServiceManager()
+        let sut: ImageServiceProtocol = ImageServiceManager()
         let url = "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg"
 
         let urlInvalid = ""
@@ -28,7 +28,7 @@ class ImageTests: QuickSpec {
                 }
                 it("Then the data decoding to UIImage is successful.") {
                     waitUntil(timeout: 20) { done in
-                        service.downloadImage(url: url, { result in
+                        sut.downloadImage(url: url, { result in
                             switch result {
                             case .success(let value):
                                 expect(value).to(beAKindOf(UIImage.self))
@@ -50,7 +50,7 @@ class ImageTests: QuickSpec {
                 }
                 it("Then the decoding the data fail.") {
                     waitUntil(timeout: 20) { done in
-                        service.downloadImage(url: urlInvalid, { result in
+                        sut.downloadImage(url: urlInvalid, { result in
                             switch result {
                             case .success:
                                 fail()

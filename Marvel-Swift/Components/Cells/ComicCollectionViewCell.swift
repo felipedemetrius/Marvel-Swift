@@ -15,6 +15,7 @@ final class ComicCollectionViewCell: UICollectionViewCell {
                                               size: CGSize(width: 120,
                                                            height: 120)))
         image.layer.cornerRadius = 10
+        image.image = UIImage(named: "placeholder")
         image.layer.masksToBounds = true
         image.layer.borderWidth = 0.5
         image.translatesAutoresizingMaskIntoConstraints = false

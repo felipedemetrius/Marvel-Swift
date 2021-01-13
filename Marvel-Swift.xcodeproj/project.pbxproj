@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0250FCDB25AF1EA000D01542 /* SnapshotTesting.framework in Carthage */ = {isa = PBXBuildFile; fileRef = 0250FCDA25AF1EA000D01542 /* SnapshotTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0250FCDE25AF1F1400D01542 /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250FCDD25AF1F1400D01542 /* SnapshotTestCase.swift */; };
+		0250FCE025AF205100D01542 /* CharactersViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250FCDF25AF205100D01542 /* CharactersViewControllerTests.swift */; };
+		0250FCE225AF20DE00D01542 /* CharacterDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0250FCE125AF20DE00D01542 /* CharacterDetailViewControllerTests.swift */; };
 		B315D9F423D4FCA8000DC392 /* CharDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B315D9F323D4FCA8000DC392 /* CharDetailViewModelTests.swift */; };
 		B340FA0F23D49C43004CAE4C /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA0E23D49C43004CAE4C /* CharacterDetailViewController.swift */; };
 		B340FA1123D49C6D004CAE4C /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA1023D49C6D004CAE4C /* CharacterDetailViewModel.swift */; };
@@ -31,9 +35,9 @@
 		B340FA5023D4D73F004CAE4C /* ImageDownloaderStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA4F23D4D73F004CAE4C /* ImageDownloaderStubs.swift */; };
 		B340FA5223D4D7B9004CAE4C /* char.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B340FA5123D4D7B9004CAE4C /* char.jpg */; };
 		B340FA5423D4D7EB004CAE4C /* ImageNull.json in Resources */ = {isa = PBXBuildFile; fileRef = B340FA5323D4D7EB004CAE4C /* ImageNull.json */; };
-		B340FA5623D4D838004CAE4C /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA5523D4D838004CAE4C /* ImageTests.swift */; };
-		B340FA5823D4DEEE004CAE4C /* CharTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA5723D4DEEE004CAE4C /* CharTests.swift */; };
-		B340FA5A23D4E201004CAE4C /* MediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA5923D4E201004CAE4C /* MediaTests.swift */; };
+		B340FA5623D4D838004CAE4C /* ImageServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA5523D4D838004CAE4C /* ImageServiceManagerTests.swift */; };
+		B340FA5823D4DEEE004CAE4C /* CharacterServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA5723D4DEEE004CAE4C /* CharacterServiceManagerTests.swift */; };
+		B340FA5A23D4E201004CAE4C /* MediaServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA5923D4E201004CAE4C /* MediaServiceManagerTests.swift */; };
 		B340FA5E23D4F052004CAE4C /* Nimble.framework in Carthage */ = {isa = PBXBuildFile; fileRef = B340FA2D23D4D33A004CAE4C /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B340FA6023D4F052004CAE4C /* Quick.framework in Carthage */ = {isa = PBXBuildFile; fileRef = B340FA2F23D4D33B004CAE4C /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B340FA6223D4F14A004CAE4C /* CharsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B340FA6123D4F14A004CAE4C /* CharsViewModelTests.swift */; };
@@ -141,6 +145,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0250FCDB25AF1EA000D01542 /* SnapshotTesting.framework in Carthage */,
 				B340FA5E23D4F052004CAE4C /* Nimble.framework in Carthage */,
 				B340FA6023D4F052004CAE4C /* Quick.framework in Carthage */,
 			);
@@ -173,6 +178,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0250FCDA25AF1EA000D01542 /* SnapshotTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapshotTesting.framework; path = Carthage/Build/iOS/SnapshotTesting.framework; sourceTree = "<group>"; };
+		0250FCDD25AF1F1400D01542 /* SnapshotTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTestCase.swift; sourceTree = "<group>"; };
+		0250FCDF25AF205100D01542 /* CharactersViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewControllerTests.swift; sourceTree = "<group>"; };
+		0250FCE125AF20DE00D01542 /* CharacterDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		B315D9F323D4FCA8000DC392 /* CharDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharDetailViewModelTests.swift; sourceTree = "<group>"; };
 		B340FA0E23D49C43004CAE4C /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		B340FA1023D49C6D004CAE4C /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
@@ -196,9 +205,9 @@
 		B340FA4F23D4D73F004CAE4C /* ImageDownloaderStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderStubs.swift; sourceTree = "<group>"; };
 		B340FA5123D4D7B9004CAE4C /* char.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = char.jpg; sourceTree = "<group>"; };
 		B340FA5323D4D7EB004CAE4C /* ImageNull.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ImageNull.json; sourceTree = "<group>"; };
-		B340FA5523D4D838004CAE4C /* ImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
-		B340FA5723D4DEEE004CAE4C /* CharTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharTests.swift; sourceTree = "<group>"; };
-		B340FA5923D4E201004CAE4C /* MediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTests.swift; sourceTree = "<group>"; };
+		B340FA5523D4D838004CAE4C /* ImageServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageServiceManagerTests.swift; sourceTree = "<group>"; };
+		B340FA5723D4DEEE004CAE4C /* CharacterServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterServiceManagerTests.swift; sourceTree = "<group>"; };
+		B340FA5923D4E201004CAE4C /* MediaServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaServiceManagerTests.swift; sourceTree = "<group>"; };
 		B340FA6123D4F14A004CAE4C /* CharsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharsViewModelTests.swift; sourceTree = "<group>"; };
 		B3A85F4E23D389A300E375A6 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		B3A85F5123D389BE00E375A6 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
@@ -298,6 +307,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0250FCDC25AF1EB400D01542 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0250FCDD25AF1F1400D01542 /* SnapshotTestCase.swift */,
+				0250FCDF25AF205100D01542 /* CharactersViewControllerTests.swift */,
+				0250FCE125AF20DE00D01542 /* CharacterDetailViewControllerTests.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B340FA0D23D49C1B004CAE4C /* CharacterDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,9 +329,9 @@
 		B340FA1B23D4C8A5004CAE4C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B340FA5723D4DEEE004CAE4C /* CharTests.swift */,
-				B340FA5523D4D838004CAE4C /* ImageTests.swift */,
-				B340FA5923D4E201004CAE4C /* MediaTests.swift */,
+				B340FA5723D4DEEE004CAE4C /* CharacterServiceManagerTests.swift */,
+				B340FA5523D4D838004CAE4C /* ImageServiceManagerTests.swift */,
+				B340FA5923D4E201004CAE4C /* MediaServiceManagerTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -389,6 +408,7 @@
 		B3FEFC7723D291AC002433F9 = {
 			isa = PBXGroup;
 			children = (
+				0250FCDA25AF1EA000D01542 /* SnapshotTesting.framework */,
 				B340FA2D23D4D33A004CAE4C /* Nimble.framework */,
 				B340FA2E23D4D33B004CAE4C /* OHHTTPStubs.framework */,
 				B340FA2F23D4D33B004CAE4C /* Quick.framework */,
@@ -432,6 +452,7 @@
 		B3FEFC9923D291AF002433F9 /* Marvel-SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				0250FCDC25AF1EB400D01542 /* ViewControllers */,
 				B340FA5B23D4EFFA004CAE4C /* ViewModels */,
 				B3FEFC9C23D291AF002433F9 /* Info.plist */,
 			);
@@ -923,8 +944,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0250FCE025AF205100D01542 /* CharactersViewControllerTests.swift in Sources */,
 				B340FA6223D4F14A004CAE4C /* CharsViewModelTests.swift in Sources */,
 				B315D9F423D4FCA8000DC392 /* CharDetailViewModelTests.swift in Sources */,
+				0250FCDE25AF1F1400D01542 /* SnapshotTestCase.swift in Sources */,
+				0250FCE225AF20DE00D01542 /* CharacterDetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -968,10 +992,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B340FA5A23D4E201004CAE4C /* MediaTests.swift in Sources */,
+				B340FA5A23D4E201004CAE4C /* MediaServiceManagerTests.swift in Sources */,
 				B340FA4323D4D55A004CAE4C /* MediaServiceStubs.swift in Sources */,
-				B340FA5823D4DEEE004CAE4C /* CharTests.swift in Sources */,
-				B340FA5623D4D838004CAE4C /* ImageTests.swift in Sources */,
+				B340FA5823D4DEEE004CAE4C /* CharacterServiceManagerTests.swift in Sources */,
+				B340FA5623D4D838004CAE4C /* ImageServiceManagerTests.swift in Sources */,
 				B340FA5023D4D73F004CAE4C /* ImageDownloaderStubs.swift in Sources */,
 				B340FA3623D4D3C0004CAE4C /* CharacterServiceStubs.swift in Sources */,
 			);

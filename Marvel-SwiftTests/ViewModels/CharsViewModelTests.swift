@@ -13,32 +13,32 @@ import SDKMarvel
 
 class CharsViewModelTests: QuickSpec {
     override func spec() {
-        let viewModel = CharsFakeViewModel()
+        let sut = CharsFakeViewModel(service: CharsServiceMock())
 
         describe("Given that I opened the list of characters") {
             context("When the list is loaded") {
-                viewModel.setDatasource()
+                sut.setDatasource()
 
                 it("Then the first character's name is") {
-                    expect(viewModel.dataSource.value.first?.name).to(contain("fake"))
+                    expect(sut.dataSource.value.first?.name).to(contain("fake"))
                 }
             }
         }
         describe("Given that I opened the list of characters") {
             context("When I make a pagination") {
-                viewModel.nextPage()
+                sut.nextPage()
 
                 it("Then the next character's name is") {
-                    expect(viewModel.dataSource.value.last?.name).to(contain("fake 2"))
+                    expect(sut.dataSource.value.last?.name).to(contain("Test fake"))
                 }
             }
         }
         describe("Given that I opened the list of characters") {
             context("When I tap a character") {
-                viewModel.didSelectRowAt(row: 0)
+                sut.didSelectRowAt(row: 0)
 
                 it("Then the next character's name is") {
-                    expect(viewModel.didTap).to(beTrue())
+                    expect(sut.didTap).to(beTrue())
                 }
             }
         }
@@ -55,28 +55,32 @@ final class CharsFakeViewModel: CharactersViewProtocol {
 
     var didTap = false
 
-    init() {
+    init(service: CharacterServiceProtocol) {
         self.error = Observable(nil)
         self.isLoading = Observable(false)
         self.isLoadingNext = Observable(false)
         self.dataSource = Observable([])
-        self.service = CharacterServiceManager()
+        self.service = service
+        self.setDatasource()
     }
 
     func setDatasource() {
-        var char = Character()
-        char.name = "fake"
-        dataSource.value = [char]
+        service.get(handler)
     }
 
     func nextPage() {
-        var char = Character()
-        char.name = "fake 2"
-        dataSource.value.append(char)
+        service.getNext(handler)
     }
 
     func handler(result: Result<[Character], NetworkingError>) {
+        switch result {
+        case .success(let value):
+            self.dataSource.value.append(contentsOf: value)
+            self.error.value = nil
 
+        case .failure(let error):
+            self.error.value = error.localizedDescription
+        }
     }
 
     func didSelectRowAt(row: Int) {

@@ -9,7 +9,7 @@
 import UIKit
 
 final class CharacterDetailViewController: UIViewController {
-    var viewModel: CharacterDetailViewProtocol
+    private let viewModel: CharacterDetailViewProtocol
 
     init(viewModel: CharacterDetailViewProtocol) {
         self.viewModel = viewModel

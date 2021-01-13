@@ -3,3 +3,4 @@ github "SnapKit/SnapKit"
 github "AliSoftware/OHHTTPStubs"
 github "Quick/Quick"
 github "Quick/Nimble"
+github "pointfreeco/swift-snapshot-testing" ~> 1.8.0

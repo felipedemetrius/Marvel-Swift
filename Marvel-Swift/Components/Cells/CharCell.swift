@@ -13,6 +13,7 @@ final class CharCell: UITableViewCell {
         let image = UIImageView(frame: CGRect(origin: .zero,
                                               size: CGSize(width: 70,
                                                            height: 70)))
+        image.image = UIImage(named: "placeholder")
         image.layer.cornerRadius = image.frame.width / 2
         image.layer.masksToBounds = true
         image.layer.borderWidth = 0.5

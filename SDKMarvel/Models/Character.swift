@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Character
-public struct Character: Codable {
+public struct Character: Decodable {
     public var id: Int?
     public var name, characterDescription, modified: String?
     public var resourceURI: String?
@@ -33,19 +33,19 @@ public struct Character: Codable {
 }
 
 // MARK: - MediaShort
-public struct MediaShort: Codable {
+public struct MediaShort: Decodable {
     public var available, returned: Int?
     public var collectionURI: String?
     public var items: [MediaItem]?
 }
 
 // MARK: - MediaItem
-public struct MediaItem: Codable {
+public struct MediaItem: Decodable {
     public var resourceURI, name: String?, type: String?
 }
 
 // MARK: - Thumbnail
-public struct Thumbnail: Codable {
+public struct Thumbnail: Decodable {
     public var path, thumbnailExtension: String?
 
     enum CodingKeys: String, CodingKey {
@@ -55,6 +55,6 @@ public struct Thumbnail: Codable {
 }
 
 // MARK: - URLElement
-public struct URLElement: Codable {
+public struct URLElement: Decodable {
     public var type, url: String?
 }

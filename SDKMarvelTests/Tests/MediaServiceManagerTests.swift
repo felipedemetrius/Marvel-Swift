@@ -1,5 +1,5 @@
 //
-//  CharTests.swift
+//  MediaServiceManagerTests.swift
 //  SDKMarvelTests
 //
 //  Created by Felipe Silva  on 19/01/20.
@@ -11,46 +11,24 @@ import Quick
 import OHHTTPStubs
 @testable import SDKMarvel
 
-class CharTests: QuickSpec {
+class MediaServiceManagerTests: QuickSpec {
     override func spec() {
-        let service = CharacterServiceManager()
+        let sut: MediaServiceProtocol = MediaServiceManager(url: "http://gateway.marvel.com/v1/public/characters/1011334/comics")
         afterEach {
             OHHTTPStubs.removeAllStubs()
         }
         describe("Given I have made a successful service request") {
             context("When I receive valid data from the server.") {
                 beforeEach {
-                    CharacterServiceStubs.responseSuccessCode200()
+                    MediaServiceStubs.responseSuccessCode200()
                 }
                 it("Then decode the data into a valid data") {
                     waitUntil { done  in
-                        service.get({ result in
+                        sut.get({ result in
                             switch result {
                             case .success(let value):
-                                expect(value).to(beAKindOf([Character].self))
-                                expect(value.first).to(beAKindOf(Character.self))
-                                expect(value).notTo(beNil())
-
-                            case .failure:
-                                fail()
-                            }
-                            done()
-                        })
-                    }
-                }
-            }
-        }
-        describe("Given I have made a successful service request.") {
-            context("When I didn't receive any data from the server.") {
-                beforeEach {
-                    CharacterServiceStubs.responseNoObjectSuccessCode200()
-                }
-                it("Then decode the data into a valid data") {
-                    waitUntil { done  in
-                        service.get({ result in
-                            switch result {
-                            case .success(let value):
-                                expect(value).to(beAKindOf([Character].self))
+                                expect(value).to(beAKindOf([Media].self))
+                                expect(value.first).to(beAKindOf(Media.self))
                                 expect(value).notTo(beNil())
 
                             case .failure:
@@ -64,11 +42,11 @@ class CharTests: QuickSpec {
         }
         describe("Given I have made a successful service request. But the format of the server data has changed. ") {
             beforeEach {
-                CharacterServiceStubs.responseFailSerialization()
+                MediaServiceStubs.responseFailSerialization()
             }
             it("Then the decode the data fail") {
                 waitUntil { done  in
-                    service.get({ result in
+                    sut.get({ result in
                         switch result {
                         case .success:
                             fail()
@@ -85,11 +63,11 @@ class CharTests: QuickSpec {
         }
         describe("Given I made a service request and received status code 404 failure.") {
             beforeEach {
-                CharacterServiceStubs.responseFailureCode404()
+                MediaServiceStubs.responseFailureCode404()
             }
             it("Then I received a NetworkingError") {
                 waitUntil { done  in
-                    service.get({ result in
+                    sut.get({ result in
                         switch result {
                         case .success:
                             fail()
@@ -104,11 +82,11 @@ class CharTests: QuickSpec {
         }
         describe("Given I made a service request with Invalid credentials.") {
             beforeEach {
-                CharacterServiceStubs.responseFailureCode401()
+                MediaServiceStubs.responseFailureCode401()
             }
             it("Then I received a error of server") {
                 waitUntil { done  in
-                    service.get({ result in
+                    sut.get({ result in
                         switch result {
                         case .success:
                             fail()
@@ -124,16 +102,16 @@ class CharTests: QuickSpec {
         }
         describe("Given I made a request requesting more objects (pagination)") {
             beforeEach {
-                CharacterServiceStubs.responseSuccessCode200()
+                MediaServiceStubs.responseSuccessCode200()
             }
             it("Then I received objects from server") {
-                var next = CharacterServiceManager()
+                var next = MediaServiceManager(url: "http://gateway.marvel.com/v1/public/characters/1011334/comics")
                 waitUntil { done  in
                     next.getNext({ result in
                         switch result {
                         case .success(let value):
-                            expect(value).to(beAKindOf([Character].self))
-                            expect(value.first).to(beAKindOf(Character.self))
+                            expect(value).to(beAKindOf([Media].self))
+                            expect(value.first).to(beAKindOf(Media.self))
                             expect(value).notTo(beNil())
 
                         case .failure:

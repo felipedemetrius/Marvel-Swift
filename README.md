@@ -17,14 +17,14 @@ SDKMarvel has [documentation](https://gitlab.com/felipedemetrius/marvel-swift/bl
 ## Requirements
 
 - iOS 10.0+ 
-- Xcode 11.3+
+- Xcode 11.7+
 - Swift 5.1+
 
 ## Unit Tests Coverage 
 
 - SDKMarvel
-    - 82,5%
+    - 82,9%
 
 - Marvel-Swift (App)
-    - 27,6 %
+    - 92,9 %
 

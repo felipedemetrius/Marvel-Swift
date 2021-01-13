@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Media
-public struct Media: Codable {
+public struct Media: Decodable {
     public var id: Int?
     public var title: String?
     public var description: String?
