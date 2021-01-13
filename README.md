@@ -3,6 +3,7 @@
 ## Getting Started
 
 1. Download or Clone the project
+1. Use Xcode version 11.x
 1. Open the terminal and navigate to the directory of project ```cd Marvel-Swift```
 1. Install the Carthage. [How to install](https://github.com/Carthage/Carthage#installing-carthage)
 1. Install Dependencies with Carthage ```carthage update --platform ios```
@@ -17,7 +18,7 @@ SDKMarvel has [documentation](https://gitlab.com/felipedemetrius/marvel-swift/bl
 ## Requirements
 
 - iOS 10.0+ 
-- Xcode 11.7+
+- Xcode 11+
 - Swift 5.1+
 
 ## Unit Tests Coverage 

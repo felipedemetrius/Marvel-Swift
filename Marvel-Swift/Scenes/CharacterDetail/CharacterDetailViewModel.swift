@@ -17,7 +17,9 @@ protocol CharacterDetailViewProtocol: AnyObject {
     var dataSource: Observable<[Media]> { get }
     var character: Character { get }
     var image: Observable<UIImage?> { get }
-
+    var titleComics: String { get }
+    var characterDescription: String { get }
+    
     func setDatasource()
     func nextPage()
     func handler(result: Result<[Media], NetworkingError>)
@@ -31,6 +33,9 @@ final class CharacterDetailViewModel: CharacterDetailViewProtocol {
     var character: Character
     var image: Observable<UIImage?>
     var service: MediaServiceProtocol
+    var titleComics: String
+    var characterDescription: String
+
     private var serviceImage = ImageServiceManager()
 
     init(character: Character) {
@@ -41,7 +46,14 @@ final class CharacterDetailViewModel: CharacterDetailViewProtocol {
         self.error = Observable(nil)
         self.service = MediaServiceManager(url: character.comics?.collectionURI ?? "")
         self.image = Observable(UIImage(named: "placeholder"))
-
+        self.titleComics = "Participations in comics" + " (\(character.comics?.available ?? 0))"
+        
+        if let description = character.characterDescription, description.trimmingCharacters(in: NSCharacterSet.whitespaces) != "" {
+            characterDescription =  description
+        } else {
+            characterDescription =  "Unavailable"
+        }
+        
         self.setImage(url: character.urlImage ?? "")
         self.setDatasource()
     }

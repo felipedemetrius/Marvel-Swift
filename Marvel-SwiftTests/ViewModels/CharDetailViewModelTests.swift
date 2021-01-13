@@ -55,6 +55,8 @@ final class CharDetailFakeViewModel: CharacterDetailViewProtocol {
     var dataSource: Observable<[Media]>
     var character: Character
     var image: Observable<UIImage?>
+    var titleComics: String
+    var characterDescription: String
 
     var didNext = false
 
@@ -66,6 +68,14 @@ final class CharDetailFakeViewModel: CharacterDetailViewProtocol {
         self.service = service
         self.image = Observable(UIImage(named: "placeholder"))
         self.character = character
+        self.titleComics = "Participations in comics" + " (\(character.comics?.available ?? 0))"
+        
+        if let description = character.characterDescription, description.trimmingCharacters(in: NSCharacterSet.whitespaces) != "" {
+            characterDescription =  description
+        } else {
+            characterDescription =  "Unavailable"
+        }
+
         self.setDatasource()
     }
 

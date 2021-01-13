@@ -48,13 +48,9 @@ final class CharacterDetailViewController: UIViewController {
 
         title = viewModel.character.name
 
-        baseView.titleComicsLabel.text = "Participations in comics" + " (\(viewModel.character.comics?.available ?? 0))"
+        baseView.titleComicsLabel.text = viewModel.titleComics
 
-        if let description = viewModel.character.characterDescription, description.trimmingCharacters(in: NSCharacterSet.whitespaces) != "" {
-            baseView.descritionLabel.text =  description
-        } else {
-            baseView.descritionLabel.text =  "Unavailable"
-        }
+        baseView.descritionLabel.text =  viewModel.characterDescription
     }
 
     private func setupBindings() {
